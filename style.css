@@ -201,7 +201,7 @@ body {
         padding-bottom: 25px;
         height: fit-content;
         justify-content: flex-start;
-        width: min-content;
+        width: 100%;
     }
 
     .card-1 {
@@ -209,6 +209,7 @@ body {
        border-top-left-radius: 0; 
        height: 300px;
        margin-bottom: 20px;
+       width: 100%;
     }
 
     .card-1 h2 {
@@ -240,6 +241,7 @@ body {
 
     .card-2 {
         gap: 10px;
+        width: 100%;
     }
 
     .card-2 h2 {
