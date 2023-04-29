@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: #FCFCFE;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 28px;
+    box-shadow: 5px 5px 20px 5px rgba(17, 37, 212, .1);
+    height: 420px;
+    width: 600px;
+}
+
+.card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 32px;
+}
+
+.card-1 {
+    text-align: center;
+    background-image: linear-gradient(0deg, #2727e0 0%, #5945f4 40%);
+    border-radius: 28px;
+    height: 100%;
+    padding-bottom: 10px;
+}
+
+.card-1 h2 {
+    font-weight: 500;
+    color: #C1C7FF;
+    font-size: 22px;
+}
+
+.circle {
+    width: 160px;
+    height: 160px;
+    background-image: linear-gradient(180deg, #471eb99b 0%, #5a45f9 100%);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.circle-number {
+    font-size: 60px;
+    color: #fff;
+    font-weight: 800;
+}
+
+.circle--number {
+    color: #c1c7ffb4;
+}
+
+.result  {
+    color: #C1C7FF;
+}
+
+.result h3 {
+    color: #fff;
+    margin: 0 0 5px 0;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.card-2 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 40px;
+    height: 365px;
+}
+
+.card-2 h2 {
+    font-weight: 700;
+    align-self: flex-start;
+}
+
+.stats {
+    width: 100%;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.stats-value {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.stats-value div {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+
+.value-reaction {
+    background-color: #ffeeee;
+}
+
+.value-reaction div span {
+    color: #FF5555;
+}
+
+
+.value-memory {
+    background-color: #fdf6ea;
+}
+
+.value-memory div span {
+    color: #FFB62B;
+}
+
+.value-verbal {
+    background-color: #e5f9f5;
+}
+
+.value-verbal div span {
+    color: #39CBA9;
+}
+
+.value-visual {
+    background-color: #eaecff;
+}
+
+.value-visual div span {
+    color: #1125D6;
+}
+
+.value {
+    font-weight: 700;
+}
+.value span {
+    color: rgba(0, 0, 0, 0.368);
+    font-size: 14px;
+}
+
+.continue {
+    height: 50px;
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px;
+    background-color: #303B5A;
+    border: none;
+    border-radius: 30px;
+}
+
+.continue:hover {
+    cursor: pointer;
+}
+
+.continue:active {
+    background-image: linear-gradient(0deg, #2727e0 0%, #5945f4 100%);;
+}
+
+.attribution {
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 620px){
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        font-family: 'Hanken Grotesk', sans-serif;
+        background-color: #FCFCFE;
+        height: 100vh;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 25px;
+        height: fit-content;
+        justify-content: flex-start;
+        width: min-content;
+    }
+
+    .card-1 {
+       border-top-right-radius: 0; 
+       border-top-left-radius: 0; 
+       height: 300px;
+       margin-bottom: 20px;
+    }
+
+    .card-1 h2 {
+        font-size: 18px;
+    }
+
+    .circle {
+        width: 120px;
+        height: 120px;
+    }
+
+    .circle-number {
+        font-size: 40px;
+    }
+
+    .result h3 {
+        font-size: 20px;
+        margin-top: 5px;
+    }
+
+    .result p {
+        font-size: 14px;
+    }
+
+    .attribution {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .card-2 {
+        gap: 10px;
+    }
+
+    .card-2 h2 {
+        font-size: 20px;
+    }
+}
