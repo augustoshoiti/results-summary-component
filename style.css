@@ -13,7 +13,7 @@ body {
     align-items: center;
     font-family: 'Hanken Grotesk', sans-serif;
     background-color: #FCFCFE;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .container {
@@ -26,6 +26,7 @@ body {
     box-shadow: 5px 5px 20px 5px rgba(17, 37, 212, .1);
     height: 420px;
     width: 600px;
+    margin-top: 20px;
 }
 
 .card {
@@ -181,7 +182,7 @@ body {
 }
 
 .attribution {
-    margin-top: 20px;
+    margin: 20px 0;
 }
 
 @media only screen and (max-width: 620px){
